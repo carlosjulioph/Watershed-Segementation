@@ -86,6 +86,7 @@ El paso final es aplicar la función `watershed()` de la biblioteca de imágenes
 
 ```
 labels = watershed(-dist, markers, mask=thresh)
+#imprime el numero de objetos 
 print("[INFO] {} unique segments found".format(len(np.unique(labels)) - 1))
 ```
 

@@ -53,7 +53,7 @@ gray = cv2.cvtColor(filtro, cv2.COLOR_BGR2GRAY)
 _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
 ```
 
-<img src="https://github.com/carlosjulioph/Watershed-Segementation/blob/main/images/thresh.jpg" width="500">
+<img src="https://github.com/carlosjulioph/Watershed-Segementation/blob/main/images/thresh.png" width="500">
 
 - ### Transformación de distancia
 
@@ -67,7 +67,7 @@ dist_visual = cv2.normalize(src=dist_visual, dst=None, alpha=0, beta=255,
                       norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_8U)
 ```
 
-<img src="https://github.com/carlosjulioph/Watershed-Segementation/blob/main/images/dist.jpg" width="500">
+<img src="https://github.com/carlosjulioph/Watershed-Segementation/blob/main/images/dist.png" width="500">
 
 Ahora necesitamos encontrar las coordenadas de los picos (máximos locales) de las áreas blancas en la imagen. Para eso, usaremos la función `peak_local_max()` de la biblioteca de imágenes Scikit. Aplicaremos esta función a nuestra imagen y la salida nos dará los marcadores que se utilizarán en la función de watershed.
 

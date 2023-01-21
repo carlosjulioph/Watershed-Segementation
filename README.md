@@ -78,5 +78,4 @@ Los módulos requeridos son los siguientes:
 
 Para el análisis utilizaremos la siguiente imagen de prueba:
 
-![](https://github.com/carlosjulioph/Watershed-Segementation/blob/main/images/1.jpg)
 <img src="https://github.com/carlosjulioph/Watershed-Segementation/blob/main/images/1.jpg" width="500">
